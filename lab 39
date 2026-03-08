@@ -1,0 +1,16 @@
+import numpy as np
+
+X = np.array([
+    [3.0, 4.0],
+    [1.0, 2.0],
+    [0.0, 5.0],
+])
+
+row_norms = np.linalg.norm(X, axis=1, keepdims=True)
+X_normalized = X / row_norms
+
+print("Normalized matrix:")
+print(X_normalized)
+
+print("Norms of each row:")
+print(np.linalg.norm(X_normalized, axis=1))
