@@ -1,0 +1,15 @@
+import numpy as np
+
+a = np.array([1.0, 2.0, 3.0])
+b = np.array([0.5, 1.0, 1.5])
+
+dot_product = np.dot(a, b)
+
+norm_a = np.linalg.norm(a)
+norm_b = np.linalg.norm(b)
+
+cosine_similarity = dot_product / (norm_a * norm_b)
+
+print(dot_product)
+print(cosine_similarity)
+
